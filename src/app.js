@@ -24,10 +24,10 @@ var gameLayer = cc.Layer.extend({
   ctor: function() {
     this._super();
     size = cc.winSize;
-    //デバッグ用ラベルをcreate
+    /*//デバッグ用ラベルをcreate
     debugText = cc.LabelTTF.create("debug","Arial","32", cc.TEXT_ALIGNMENT_CENTER);
     this.addChild(debugText);
-    debugText.setPosition(450,size.height - 20);
+    debugText.setPosition(450,size.height - 20);*/
     return true;
   },
 
@@ -107,7 +107,7 @@ var particleLayer = cc.Layer.extend({
     var skillName = ["Skill","Ignis","Boll","Shine"];
     var sName = "res." + skillName[attrib] ;
 
-    debugText.setString("No."+attrib+sName);
+    //debugText.setString("No."+attrib+sName);
 
     var tempParticle = new cc.ParticleSystem(eval(sName));
 
